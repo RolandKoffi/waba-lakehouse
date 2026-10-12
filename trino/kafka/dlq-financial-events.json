@@ -1,0 +1,49 @@
+{
+  "tableName": "dlq-financial-events",
+  "schemaName": "default",
+  "topicName": "dlq-financial-events",
+  "message": {
+    "dataFormat": "json",
+    "fields": [
+      {
+        "name": "source_topic",
+        "mapping": "source_topic",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "error",
+        "mapping": "error",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "raw_value",
+        "mapping": "raw_value",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "source_file",
+        "mapping": "source_file",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "country_code",
+        "mapping": "country_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "kafka_ts",
+        "mapping": "kafka_ts",
+        "type": "TIMESTAMP",
+        "dataFormat": "custom-date-time",
+        "formatHint": "yyyy-MM-dd HH:mm:ss"
+      },
+      {
+        "name": "detected_at",
+        "mapping": "detected_at",
+        "type": "TIMESTAMP",
+        "dataFormat": "custom-date-time",
+        "formatHint": "yyyy-MM-dd HH:mm:ss"
+      }
+    ]
+  }
+}

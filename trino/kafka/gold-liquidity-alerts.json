@@ -1,0 +1,59 @@
+{
+  "tableName": "gold-liquidity-alerts",
+  "schemaName": "default",
+  "topicName": "gold-liquidity-alerts",
+  "message": {
+    "dataFormat": "json",
+    "fields": [
+      {
+        "name": "alert_id",
+        "mapping": "alert_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "alert_type",
+        "mapping": "alert_type",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "rule",
+        "mapping": "rule",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "country_code",
+        "mapping": "country_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "entity_ref",
+        "mapping": "entity_ref",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "amount_eur",
+        "mapping": "amount_eur",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "event_time",
+        "mapping": "event_time",
+        "type": "TIMESTAMP",
+        "dataFormat": "custom-date-time",
+        "formatHint": "yyyy-MM-dd HH:mm:ss"
+      },
+      {
+        "name": "detected_at",
+        "mapping": "detected_at",
+        "type": "TIMESTAMP",
+        "dataFormat": "custom-date-time",
+        "formatHint": "yyyy-MM-dd HH:mm:ss"
+      },
+      {
+        "name": "details",
+        "mapping": "details",
+        "type": "VARCHAR"
+      }
+    ]
+  }
+}
